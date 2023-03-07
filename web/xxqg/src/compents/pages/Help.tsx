@@ -21,8 +21,9 @@ class Help extends Component<any, any> {
     }
     render() {
         return <>
-            <h1 style={{color:"red",margin:10}}>该软件为免费软件，若你目前正在付费使用，请速度举报管理员</h1><br/>
-            <h2 style={{margin:10}}>项目地址：<a href="https://github.com/sjkhsl/study_xxqg">https://github.com/sjkhsl/study_xxqg</a></h2>
+            <h1 style={{color:"red",margin:10}}>感谢打开此页,不过没有什么帮助</h1><br/>
+            <h2 style={{margin:10}}>求是网：<a href="http://m.qstheory.cn/">http://m.qstheory.cn/</a></h2>
+			<h2 style={{margin:10}}>中国国家地理：<a href="http://download.dili360.com/">http://download.dili360.com/</a></h2>
             <br/><h2 style={{margin:10}}>{this.state.about}</h2>
         </>
     }

@@ -36,7 +36,7 @@ class AddUser extends Component<any, any>{
         if (!this.isMobile()){
             Dialog.show({
                 title:"提醒",
-                content:"网页端不再生成二维码，请在移动端访问该网页，会自动跳转到xxqg",
+                content:"网页端不再生成二维码，请在移动端访问该网页",
                 closeOnAction:true,
                 closeOnMaskClick:true,
             })
@@ -58,7 +58,7 @@ class AddUser extends Component<any, any>{
                 let token = await getToken(resp.data.split("=")[1],data.sign)
                 console.log(token)
                 if (token.success){
-                    Toast.show("登录成功\n该软件为免费软件，若你正在付费使用，请速度举报管理员")
+                    Toast.show("登录成功")
                     this.setState({
                         link : ""
                     })
